@@ -118,13 +118,13 @@
                                     <span class="badge rounded-pill">Boolean web app</span>
                                     <span class="badge rounded-pill">Boolean blog app</span>
                                 </div>
-                                <div class="d-lg-none d-inline-block">
+                                <div class="d-lg-none d-inline-block"> <!-- badge small -->
                                     <span class="badge rounded-pill">+</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-sm-4 order-3">
+                    <div class="col-xl-4 col-sm-4 order-3"> <!-- counter -->
                         <h6>
                             Studenti online negli ultimi 30 minuti
                         </h6>
@@ -132,13 +132,21 @@
                             125
                         </span>
                     </div>
-                    <div class="col-xl-2 col-sm-4 order-1 order-sm-last">
+                    <div class="col-xl-2 col-sm-4 order-1 order-sm-last d-flex align-items-baseline text-center"> <!-- new student canvas -->
                         <h6>
                             Nuovo studente
                         </h6>
-                            
-                            
-                            
+                        <button class="btn btn-primary ms-4 border-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                ...
+                            </div>
+                        </div>                       
                     </div>
                 </div>                
             </div>            
