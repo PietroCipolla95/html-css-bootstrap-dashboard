@@ -1,3 +1,22 @@
 :root {
     --db-banner: #1B72E8;
+    --db-sidebar: #051E34;
+}
+
+.logo_small img {
+    width: 50px;
+}
+
+#sidebar {
+    background-color: var(--db-sidebar);
+    background-image: url(../img/sidebar-bg.png);
+    width: 150px;
+    height: calc(100vh - 71px);
+}
+
+@media screen and (max-width: 1199px) {
+    #sidebar {
+        width: 75px;
+        text-align: center;
+    }    
 }
