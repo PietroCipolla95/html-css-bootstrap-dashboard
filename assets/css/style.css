@@ -1,6 +1,7 @@
 :root {
     --db-banner: #1B72E8;
     --db-sidebar: #051E34;
+    --db-badge: #165BBA;
 }
 
 .logo_small img {
@@ -14,9 +15,22 @@
     height: calc(100vh - 71px);
 }
 
+.banner {
+    width: calc(100vw - 150px);
+}
+
+.banner .badge {
+    background-color: var(--db-badge)!important;
+    font-size: .6rem;
+}
+
 @media screen and (max-width: 1199px) {
     #sidebar {
         width: 75px;
         text-align: center;
-    }    
+    }  
+    
+    .banner {
+        width: calc(100vw - 75px);
+    }
 }
