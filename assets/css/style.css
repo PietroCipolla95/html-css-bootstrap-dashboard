@@ -8,11 +8,15 @@
     width: 50px;
 }
 
+header {
+    height: 60px;
+}
+
 #sidebar {
     background-color: var(--db-sidebar);
     background-image: url(../img/sidebar-bg.png);
     width: 150px;
-    height: calc(100vh - 71px);
+    height: calc(100vh - 60px);
 }
 
 .banner {
@@ -22,6 +26,10 @@
 .banner .badge {
     background-color: var(--db-badge)!important;
     font-size: .6rem;
+}
+
+#main_page .table img {
+    width: 30px;
 }
 
 @media screen and (max-width: 1199px) {
