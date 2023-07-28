@@ -165,9 +165,9 @@
                     </div>
                 </div>                
             </div>
-            <div class="container m-1 py-4"> <!-- Main cards -->
+            <div class="content container m-1 py-4"> <!-- Main cards -->
                 <div class="row">
-                    <div class="col-8"> <!-- left row -->
+                    <div class="col-xl-8 col-12"> <!-- left row -->
                         <div class="row flex-column">
                             <div class="col">
                                 <div class="card"> <!-- next lessons -->
@@ -175,12 +175,12 @@
                                         Prossime lezioni
                                     </div>
                                     <div class="card-body">
-                                        <table class="table table-hover w-100">
+                                        <table class="table table-hover"> <!-- table -->
                                             <thead>
                                               <tr>
-                                                <th scope="col" class="w-50">Nome</th>
-                                                <th scope="col">Data inizio</th>
-                                                <th scope="col">Roi</th>
+                                                <th scope="col" class="table_name w-50">Nome</th>
+                                                <th scope="col" class="d-none d-xl-table-cell">Data inizio</th>
+                                                <th scope="col" class="d-none d-xl-table-cell">Roi</th>
                                                 <th scope="col">Stato</th>
                                                 <th scope="col">Azioni</th>
                                               </tr>
@@ -191,8 +191,8 @@
                                                     <img src="./assets/img/class-avatar.jpg" alt="">
                                                     <span>Classe 75</span>
                                                 </td>
-                                                <td>15 febbraio 2021</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-xl-table-cell">15 febbraio 2021</td>
+                                                <td class="d-none d-xl-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-success">done</span>
                                                 </td>
@@ -210,8 +210,8 @@
                                                     <img src="./assets/img/class-avatar.jpg" alt="">
                                                     <span>Classe 76</span>
                                                 </td>
-                                                <td>16 febbraio 2021</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-xl-table-cell">16 febbraio 2021</td>
+                                                <td class="d-none d-xl-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-success">done</span>
                                                 </td>
@@ -229,8 +229,8 @@
                                                     <img src="./assets/img/class-avatar.jpg" alt="">
                                                     <span>Classe 77</span>
                                                 </td>
-                                                <td>17 febbraio 2021</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-xl-table-cell">17 febbraio 2021</td>
+                                                <td class="d-none d-xl-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-warning">processing</span>
                                                 </td>
@@ -248,8 +248,8 @@
                                                     <img src="./assets/img/class-avatar.jpg" alt="">
                                                     <span>Classe 78</span>
                                                 </td>
-                                                <td>18 febbraio 2021</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-xl-table-cell">18 febbraio 2021</td>
+                                                <td class="d-none d-xl-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-success">done</span>
                                                 </td>
@@ -267,8 +267,8 @@
                                                     <img src="./assets/img/class-avatar.jpg" alt="">
                                                     <span>Classe 79</span>
                                                 </td>
-                                                <td>19 febbraio 2021</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-xl-table-cell">19 febbraio 2021</td>
+                                                <td class="d-none d-xl-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-success">done</span>
                                                 </td>
@@ -286,8 +286,8 @@
                                                     <img src="./assets/img/class-avatar.jpg" alt="">
                                                     <span>Classe 80</span>
                                                 </td>
-                                                <td>20 febbraio 2021</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-xl-table-cell">20 febbraio 2021</td>
+                                                <td class="d-none d-xl-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-success">done</span>
                                                 </td>
@@ -305,8 +305,8 @@
                                                     <img src="./assets/img/class-avatar.jpg" alt="">
                                                     <span>Classe 81</span>
                                                 </td>
-                                                <td>21 febbraio 2021</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-xl-table-cell">21 febbraio 2021</td>
+                                                <td class="d-none d-xl-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-warning">processing</span>
                                                 </td>
@@ -324,8 +324,8 @@
                                                     <img src="./assets/img/class-avatar.jpg" alt="">
                                                     <span>Classe 82</span>
                                                 </td>
-                                                <td>22 febbraio 2021</td>
-                                                <td>20%</td>
+                                                <td class="d-none d-xl-table-cell">22 febbraio 2021</td>
+                                                <td class="d-none d-xl-table-cell">20%</td>
                                                 <td>
                                                     <span class="badge rounded-pill text-bg-success">done</span>
                                                 </td>
@@ -343,14 +343,52 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
-                               
+                            <div class="col py-4"> <!-- FAQS -->
+                                <div class="card">
+                                    <div class="card-header">
+                                        F.A.Q.
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    Come aggiungere un nuovo studente?
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    Posso usare questa dashboard da mobile?
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                               
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-xl-4 col-12">
                         <div class="row flex-column">
-                            <div class="col">
+                            <div class="col"> <!-- checkbox todo list -->
                                 <div class="card">
                                     <div class="card-header">
                                         To Do
@@ -380,8 +418,28 @@
                                 </div>
 
                             </div>
-                            <div class="col">
-
+                            <div class="col py-4"> <!-- graph -->
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card">
+                                            <img src="./assets/img/stats.jpeg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Utenti attivi</h5>
+                                              <p class="card-text">
+                                                Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                              </p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item">Gennaio: 1200</li>
+                                              <li class="list-group-item">Febbraio: 800</li>
+                                              <li class="list-group-item">Marzo: 1500</li>
+                                            </ul>
+                                            <div class="card-body">
+                                              <a href="#" class="card-link">Visualizza report approfondito</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

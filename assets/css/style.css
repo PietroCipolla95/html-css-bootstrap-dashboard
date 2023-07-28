@@ -19,6 +19,16 @@ header {
     height: calc(100vh - 60px);
 }
 
+#main_page {
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#main_page::-webkit-scrollbar {
+    display: none;
+}
+
 .banner {
     width: calc(100vw - 150px);
 }
@@ -28,11 +38,16 @@ header {
     font-size: .6rem;
 }
 
+.content {
+    font-size: .8rem;
+}
+
 #main_page .table img {
     width: 30px;
 }
 
 @media screen and (max-width: 1199px) {
+
     #sidebar {
         width: 75px;
         text-align: center;
@@ -41,4 +56,16 @@ header {
     .banner {
         width: calc(100vw - 75px);
     }
+
+    .table_name {
+        width: 25%;
+    }
 }
+
+@media screen and (max-width: 768px) {
+
+    .table_name {
+        width: auto;
+    }    
+}
+
