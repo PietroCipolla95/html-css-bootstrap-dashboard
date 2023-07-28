@@ -8,15 +8,11 @@
     width: 50px;
 }
 
-header {
-    height: 60px;
-}
-
 #sidebar {
     background-color: var(--db-sidebar);
     background-image: url(../img/sidebar-bg.png);
     width: 200px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 56px);
 }
 
 .side_item:hover {
