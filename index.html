@@ -21,7 +21,7 @@
                     </a>
                 </div>
                 <div class="flex-grow-1">  <!-- searchbar -->
-                    <form class="px-4" role="search">
+                    <form role="search">
                         <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
                     </form>
                 </div>
@@ -43,11 +43,11 @@
                                     <i class="fa-solid fa-ellipsis-vertical"></i>
                                 </a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown d-flex p-0">
                                 <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fa-solid fa-bell text-warning"></i>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-xl-end">
+                                <ul class="dropdown-menu dropdown-menu-end">
                                     <li>
                                         <a class="dropdown-item" href="#">Action</a>
                                     </li>
@@ -70,175 +70,185 @@
             <div class="container h-100 d-flex flex-column justify-content-between">
                 <div class="row flex-column justify-content-between pt-4 px-xl-2"> <!-- Home signal stats -->
                     <div class="col d-flex flex-column">
-                        <a href="#" class="text-decoration-none text-light">
-                            <i class="fa fa-home w-25"></i>
-                            <span class="d-none d-xl-inline-block">Home</span>
-                        </a>
-                        <a href="#" class="text-decoration-none text-light py-2">
-                            <i class="fa-solid fa-chart-simple w-25"></i>
-                            <span class="d-none d-xl-inline-block">Stats</span>
-                        </a>
-                        <a href="#" class="text-decoration-none text-light">
-                            <i class="fa-solid fa-signal w-25"></i>
-                            <span class="d-none d-xl-inline-block">Signal</span>
-                        </a>                                                                        
+                        <div class="side_item py-2">
+                            <a href="#" class="text-decoration-none text-light">
+                                <i class="fa fa-home w-25"></i>
+                                <span class="d-none d-xl-inline-block">Home</span>
+                            </a>
+                        </div>
+                        <div class="side_item py-2">
+                            <a href="#" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-chart-simple w-25"></i>
+                                <span class="d-none d-xl-inline-block">Stats</span>
+                            </a>
+                        </div>
+                        <div class="side_item py-2">
+                            <a href="#" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-signal w-25"></i>
+                                <span class="d-none d-xl-inline-block">Signal</span>
+                            </a>                                                                       
+                        </div>
                     </div>
                 </div>    
                 <div class="row pb-4 px-xl-2"> <!-- admin -->
                     <div class="col">
-                        <a href="#" class="text-decoration-none text-light">
-                            <i class="fa-solid fa-gear w-25"></i>
-                            <span class="d-none d-xl-inline-block">Admin</span>
-                        </a>
+                        <div class="side_item py-2">
+                            <a href="#" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-gear w-25"></i>
+                                <span class="d-none d-xl-inline-block">Admin</span>
+                            </a>
+                        </div>
                     </div>
                 </div> 
             </div>
         </div>
         <div id="main_page"> <!-- Main Page -->
-            <div class="banner bg-primary py-4 px-2 text-light"> <!-- Banner -->   
-                <div class="row justify-content-between">
-                    <div class="col-xl-6 col-sm-4 order-2">
-                        <div class="row">
-                            <div class="col-xl-12 d-flex">
-                                <h1>
-                                    Boolean
-                                </h1>
-                                <div class="mt-3 pt-1 px-2">
-                                    <span class="badge rounded-pill">Piano Blaze</span>
+            <div class="banner bg-primary py-4 px-2 text-light"> <!-- Banner --> 
+                <div class="container-fluid">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-6 col-sm-4 order-2">
+                            <div class="row">
+                                <div class="col-xl-12 d-flex">
+                                    <h1>
+                                        Boolean
+                                    </h1>
+                                    <div class="mt-3 pt-1 px-2">
+                                        <span class="badge rounded-pill">Piano Blaze</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <span class="badge rounded-pill">3 app</span>
-                                <i class="fa-solid fa-angles-right"></i>
-                                <div class="d-lg-inline-block d-none"> <!-- badge xl -->
-                                    <span class="badge rounded-pill">Boolean mobile app</span>
-                                    <span class="badge rounded-pill">Boolean web app</span>
-                                    <span class="badge rounded-pill">Boolean blog app</span>
-                                </div>
-                                <div class="d-lg-none d-inline-block"> <!-- badge small -->
-                                    <span class="badge rounded-pill">+</span>
+                                <div class="col-xl-12">
+                                    <span class="badge rounded-pill">3 app</span>
+                                    <i class="fa-solid fa-angles-right fa-xs"></i>
+                                    <div class="d-lg-inline-block d-none"> <!-- badge xl -->
+                                        <span class="badge rounded-pill">Boolean mobile app</span>
+                                        <span class="badge rounded-pill">Boolean web app</span>
+                                        <span class="badge rounded-pill">Boolean blog app</span>
+                                    </div>
+                                    <div class="d-lg-none d-inline-block"> <!-- badge small -->
+                                        <span class="badge rounded-pill">+</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-sm-4 order-3"> <!-- counter -->
-                        <h6>
-                            Studenti online negli ultimi 30 minuti
-                        </h6>
-                        <span class="fs-1">
-                            125
-                        </span>
-                    </div>
-                    <div class="col-xl-2 col-sm-4 order-1 order-sm-last d-flex align-items-baseline text-center fw-bolder"> <!-- new student canva -->
-                        <h6>
-                            Nuovo studente
-                        </h6>
-                        <button class="btn btn-primary ms-4 border-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
-                        <div class="offcanvas offcanvas-end ms_canvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body d-flex flex-wrap flex-grow-0 text-start">
-                                <form class="row g-3 needs-validation" novalidate>
-                                    <div class="col-6">
-                                        <label for="validationCustom01" class="form-label">Nome</label>
-                                        <input type="text" class="form-control" id="validationCustom01" value="" required>
-                                        <div class="valid-feedback">
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <label for="validationCustom02" class="form-label">Cognome</label>
-                                        <input type="text" class="form-control" id="validationCustom02" value="" required>
-                                        <div class="valid-feedback">
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                      <label for="validationEmail" class="form-label">Email</label>
-                                        <div class="input-group has-validation">
-                                            <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                            <input type="text" class="form-control" id="validationEmail" aria-describedby="inputGroupPrepend" required>
-                                            <div class="invalid-feedback">
+                        <div class="col-xl-4 col-sm-4 order-3"> <!-- counter -->
+                            <h6>
+                                Studenti online negli ultimi 30 minuti
+                            </h6>
+                            <span class="fs-1">
+                                125
+                            </span>
+                        </div>
+                        <div class="col-xl-2 col-sm-4 order-1 order-sm-last d-flex align-items-baseline text-center fw-bolder"> <!-- new student canva -->
+                            <h6>
+                                Nuovo studente
+                            </h6>
+                            <button class="btn btn-primary ms-4 border-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                            <div class="offcanvas offcanvas-end ms_canvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body d-flex flex-wrap flex-grow-0 text-start">
+                                    <form class="row g-3 needs-validation" novalidate>
+                                        <div class="col-md-6 col-12">
+                                            <label for="validationCustom01" class="form-label">Nome</label>
+                                            <input type="text" class="form-control" id="validationCustom01" value="" required>
+                                            <div class="valid-feedback">
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <label for="validationPassword" class="form-label">Password</label>
-                                        <input type="text" class="form-control" id="validationPassword" value="" required>
-                                        <div class="valid-feedback">
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <label for="validationEmail" class="form-label">Indirizzo email</label>
-                                          <div class="input-group has-validation">
-                                            <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                            <input type="text" class="form-control" id="validationEmail" aria-describedby="inputGroupPrepend" required>
-                                            <div class="invalid-feedback">
+                                        <div class="col-md-6 col-12">
+                                            <label for="validationCustom02" class="form-label">Cognome</label>
+                                            <input type="text" class="form-control" id="validationCustom02" value="" required>
+                                            <div class="valid-feedback">
                                             </div>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                          <label for="validationEmail" class="form-label">Email</label>
+                                            <div class="input-group has-validation">
+                                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                <input type="text" class="form-control" id="validationEmail" aria-describedby="inputGroupPrepend" required>
+                                                <div class="invalid-feedback">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <label for="validationPassword" class="form-label">Password</label>
+                                            <input type="text" class="form-control" id="validationPassword" value="" required>
+                                            <div class="valid-feedback">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <label for="validationEmail" class="form-label">Indirizzo email</label>
+                                              <div class="input-group has-validation">
+                                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                <input type="text" class="form-control" id="validationEmail" aria-describedby="inputGroupPrepend" required>
+                                                <div class="invalid-feedback">
+                                                </div>
+                                              </div>
+                                        </div>
+                                          <div class="col-md-6 col-12">
+                                            <label for="validationPassword" class="form-label">Password</label>
+                                            <input type="text" class="form-control" id="validationPassword" value="" required>
+                                            <div class="valid-feedback">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                          <label for="validationCustom03" class="form-label">Indirizzo</label>
+                                          <input type="text" class="form-control" id="validationCustom03" required>
+                                          <div class="invalid-feedback">
                                           </div>
-                                    </div>
-                                      <div class="col-6">
-                                        <label for="validationPassword" class="form-label">Password</label>
-                                        <input type="text" class="form-control" id="validationPassword" value="" required>
-                                        <div class="valid-feedback">
                                         </div>
-                                    </div>
-                                    <div class="col-12">
-                                      <label for="validationCustom03" class="form-label">Indirizzo</label>
-                                      <input type="text" class="form-control" id="validationCustom03" required>
-                                      <div class="invalid-feedback">
-                                      </div>
-                                    </div>
-                                    <div class="col-6">
-                                      <label for="validationCustom03" class="form-label">Città</label>
-                                      <input type="text" class="form-control" id="validationCustom03" required>
-                                      <div class="invalid-feedback">
-                                        Please provide a valid city.
-                                      </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <label for="validationCustom04" class="form-label">Stato</label>
-                                      <select class="form-select" id="validationCustom04" required>
-                                        <option selected disabled value="">Choose...</option>
-                                        <option>Italia</option>
-                                      </select>
-                                      <div class="invalid-feedback">
-                                        Please select a valid state.
-                                      </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <label for="validationCustom05" class="form-label">CAP</label>
-                                      <input type="text" class="form-control" id="validationCustom05" required>
-                                      <div class="invalid-feedback">
-                                        Please provide a valid zip.
-                                      </div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="formFile" class="form-label">Foto</label>
-                                        <input class="form-control" type="file" id="formFile">
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                          Seleziona per proseguire
-                                        </label>
-                                    </div>                                    
-                                    <div class="col-12">
-                                      <button class="btn btn-primary" type="submit">Salva</button>
-                                      <button class="btn btn-warning" type="submit">Svuota</button>
-                                    </div>
-                                </form>                                
-                            </div>
-                        </div>                       
-                    </div>
-                </div>                
+                                        <div class="col-md-6 col-12">
+                                          <label for="validationCustom03" class="form-label">Città</label>
+                                          <input type="text" class="form-control" id="validationCustom03" required>
+                                          <div class="invalid-feedback">
+                                            Please provide a valid city.
+                                          </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                          <label for="validationCustom04" class="form-label">Stato</label>
+                                          <select class="form-select" id="validationCustom04" required>
+                                            <option selected disabled value="">Choose...</option>
+                                            <option>Italia</option>
+                                          </select>
+                                          <div class="invalid-feedback">
+                                            Please select a valid state.
+                                          </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                          <label for="validationCustom05" class="form-label">CAP</label>
+                                          <input type="text" class="form-control" id="validationCustom05" required>
+                                          <div class="invalid-feedback">
+                                            Please provide a valid zip.
+                                          </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formFile" class="form-label">Foto</label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Seleziona per proseguire
+                                            </label>
+                                        </div>                                    
+                                        <div class="col-12">
+                                          <button class="btn btn-primary" type="submit">Salva</button>
+                                          <button class="btn btn-warning" type="submit">Svuota</button>
+                                        </div>
+                                    </form>                                
+                                </div>
+                            </div>                       
+                        </div>
+                    </div>                
+                </div>  
             </div>
-            <div class="content container m-1 py-4"> <!-- Main cards -->
+            <div class="container-fluid py-4 content"> <!-- Main cards -->
                 <div class="row">
-                    <div class="col-xl-8 col-12"> <!-- left row -->
+                    <div class="col-xl-8 col-12"> <!-- left row main -->
                         <div class="row flex-column">
-                            <div class="col">
-                                <div class="card"> <!-- next lessons -->
+                            <div class="col"> <!-- next lessons -->
+                                <div class="card"> 
                                     <div class="card-header">
                                         Prossime lezioni
                                     </div>
@@ -300,7 +310,7 @@
                                                 <td class="d-none d-xl-table-cell">17 febbraio 2021</td>
                                                 <td class="d-none d-xl-table-cell">20%</td>
                                                 <td>
-                                                    <span class="badge rounded-pill text-bg-warning">processing</span>
+                                                    <span class="badge rounded-pill text-bg-warning">process</span>
                                                 </td>
                                                 <td>
                                                     <button type="button" class="btn btn-outline-secondary">
@@ -338,7 +348,7 @@
                                                 <td class="d-none d-xl-table-cell">19 febbraio 2021</td>
                                                 <td class="d-none d-xl-table-cell">20%</td>
                                                 <td>
-                                                    <span class="badge rounded-pill text-bg-success">done</span>
+                                                    <span class="badge rounded-pill text-bg-danger">failed</span>
                                                 </td>
                                                 <td>
                                                     <button type="button" class="btn btn-outline-secondary">
@@ -376,7 +386,7 @@
                                                 <td class="d-none d-xl-table-cell">21 febbraio 2021</td>
                                                 <td class="d-none d-xl-table-cell">20%</td>
                                                 <td>
-                                                    <span class="badge rounded-pill text-bg-warning">processing</span>
+                                                    <span class="badge rounded-pill text-bg-danger">failed</span>
                                                 </td>
                                                 <td>
                                                     <button type="button" class="btn btn-outline-secondary">
@@ -454,7 +464,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-12">
+                    <div class="col-xl-4 col-12"> <!-- right row main -->
                         <div class="row flex-column">
                             <div class="col"> <!-- checkbox todo list -->
                                 <div class="card">
@@ -515,24 +525,6 @@
             </div>
         </div>
     </main>
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
