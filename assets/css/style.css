@@ -38,6 +38,10 @@ header {
     font-size: .6rem;
 }
 
+.ms_canvas {
+    width: 40%!important;
+}
+
 .content {
     font-size: .8rem;
 }
@@ -66,6 +70,10 @@ header {
 
     .table_name {
         width: auto;
-    }    
+    }
+    
+    .ms_canvas {
+        width: 100%!important;
+    }
 }
 

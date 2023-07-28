@@ -129,42 +129,105 @@
                             125
                         </span>
                     </div>
-                    <div class="col-xl-2 col-sm-4 order-1 order-sm-last d-flex align-items-baseline text-center"> <!-- new student canva -->
+                    <div class="col-xl-2 col-sm-4 order-1 order-sm-last d-flex align-items-baseline text-center fw-bolder"> <!-- new student canva -->
                         <h6>
                             Nuovo studente
                         </h6>
                         <button class="btn btn-primary ms-4 border-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
-                        <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas offcanvas-end ms_canvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
-                            <div class="offcanvas-body d-flex flex-wrap flex-grow-0">
-                                <div class="mb-3 col-6 px-2">
-                                    <label for="exampleFormControlInput1" class="form-label">Name</label>
-                                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="">
-                                </div>
-                                <div class="mb-3 col-6 px-2">
-                                    <label for="exampleFormControlInput1" class="form-label">Cognome</label>
-                                    <input type="surname" class="form-control" id="exampleFormControlInput1" placeholder="">
-                                </div>
-                                <div class="input-group mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Cognome</label>
-                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                                  </div>
-                                <div class="mb-3 col-6 px-2">
-                                    <label for="exampleFormControlInput1" class="form-label">Name</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                                </div>
-                                <div class="mb-3 col-6 px-2">
-                                    <label for="exampleFormControlInput1" class="form-label">Name</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                                </div>
-                                <div class="mb-3 col-6 px-2">
-                                    <label for="exampleFormControlInput1" class="form-label">Name</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                                </div>
+                            <div class="offcanvas-body d-flex flex-wrap flex-grow-0 text-start">
+                                <form class="row g-3 needs-validation" novalidate>
+                                    <div class="col-6">
+                                        <label for="validationCustom01" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="" required>
+                                        <div class="valid-feedback">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="validationCustom02" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                                        <div class="valid-feedback">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                      <label for="validationEmail" class="form-label">Email</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                            <input type="text" class="form-control" id="validationEmail" aria-describedby="inputGroupPrepend" required>
+                                            <div class="invalid-feedback">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="validationPassword" class="form-label">Password</label>
+                                        <input type="text" class="form-control" id="validationPassword" value="" required>
+                                        <div class="valid-feedback">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="validationEmail" class="form-label">Indirizzo email</label>
+                                          <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                            <input type="text" class="form-control" id="validationEmail" aria-describedby="inputGroupPrepend" required>
+                                            <div class="invalid-feedback">
+                                            </div>
+                                          </div>
+                                    </div>
+                                      <div class="col-6">
+                                        <label for="validationPassword" class="form-label">Password</label>
+                                        <input type="text" class="form-control" id="validationPassword" value="" required>
+                                        <div class="valid-feedback">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="validationCustom03" class="form-label">Indirizzo</label>
+                                      <input type="text" class="form-control" id="validationCustom03" required>
+                                      <div class="invalid-feedback">
+                                      </div>
+                                    </div>
+                                    <div class="col-6">
+                                      <label for="validationCustom03" class="form-label">Città</label>
+                                      <input type="text" class="form-control" id="validationCustom03" required>
+                                      <div class="invalid-feedback">
+                                        Please provide a valid city.
+                                      </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                      <label for="validationCustom04" class="form-label">Stato</label>
+                                      <select class="form-select" id="validationCustom04" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option>Italia</option>
+                                      </select>
+                                      <div class="invalid-feedback">
+                                        Please select a valid state.
+                                      </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                      <label for="validationCustom05" class="form-label">CAP</label>
+                                      <input type="text" class="form-control" id="validationCustom05" required>
+                                      <div class="invalid-feedback">
+                                        Please provide a valid zip.
+                                      </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label">Foto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Seleziona per proseguire
+                                        </label>
+                                    </div>                                    
+                                    <div class="col-12">
+                                      <button class="btn btn-primary" type="submit">Salva</button>
+                                      <button class="btn btn-warning" type="submit">Svuota</button>
+                                    </div>
+                                </form>                                
                             </div>
                         </div>                       
                     </div>
